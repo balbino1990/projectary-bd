@@ -39,8 +39,8 @@ CREATE PROCEDURE IsInGroup(IN entityUUID VARCHAR(255), IN groupUUID VARCHAR(255)
 DROP PROCEDURE IF EXISTS InsertNewCourse;
 CREATE PROCEDURE `API_InsertNewCourse`(IN `id` VARCHAR(255), IN `descrip` VARCHAR(255))
   BEGIN
-     insert into course (`id`,`desc`)values (id,descrip);
-     select *
-     from course; 
+     INSERT INTO course (`id`,`desc`)VALUES (id,descrip);
+     SELECT *
+     FROM course; 
 
 END
