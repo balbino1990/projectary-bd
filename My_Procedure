@@ -1,0 +1,13 @@
+#############Insert New School###############
+
+USE `projectary_bd_2017`;
+DROP procedure IF EXISTS `API_InsertNewSchool`;
+
+DELIMITER $$
+USE `projectary_bd_2017`$$
+CREATE PROCEDURE `API_InsertNewSchool` (IN in_desc varchar(255))
+BEGIN
+	insert into school(`desc`) values(in_desc);
+END$$
+
+DELIMITER ;
